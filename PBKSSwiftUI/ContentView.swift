@@ -8,17 +8,55 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+//    var videosData: [VideosData]
+    @State private var selection: Tab = .newsListing
+    
+    enum Tab {
+        case videosListing
+        case videosDetail
+        case newsListing
+        case newsDetail
+    }
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+//            NewsListing()
+//            VideosListing()
+//            VideosDetail(date: "", title: "", titleAlias: "", viewModel: VideosVM())
+            
+            TabView(selection: $selection) {
+                VideosListing()
+                    .tabItem {
+                        Label("Videos Listing", systemImage: "star")
+                    }
+                    .tag(Tab.videosListing)
+                
+                VideosDetail(date: "", title: "", titleAlias: "", viewModel: VideosVM())
+                    .tabItem {
+                        Label("Videos Details", systemImage: "star")
+                    }
+                    .tag(Tab.videosDetail)
+                
+                NewsListing(viewModel: NewsVM())
+                    .tabItem {
+                        Label("News Listing", systemImage: "star")
+                    }
+                    .tag(Tab.newsListing)
+                
+                NewsDetail(date: "", title: "", titleAlias: "", viewModel: NewsVM())
+                    .tabItem {
+                        Label("News Details", systemImage: "star")
+                    }
+                    .tag(Tab.newsDetail)
+            }
+            
+//            Login(mobileNumber: "")
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+    
 }

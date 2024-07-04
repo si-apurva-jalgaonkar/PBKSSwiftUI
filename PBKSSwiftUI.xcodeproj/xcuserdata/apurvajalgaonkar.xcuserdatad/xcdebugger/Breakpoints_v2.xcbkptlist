@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "152F52A9-145B-47B2-88D4-848841072DFA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04479F31-958E-4EEB-9F5F-287E803C731A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/WKWebView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "updateUIView(_:context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24F54564-B652-4C9B-B87C-38EC31CD9DF9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/WKWebView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "makeUIView(context:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "00646356-B323-40E6-AD15-9016BAFC1F31"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/News/Views/NewsDetail.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "00646356-B323-40E6-AD15-9016BAFC1F31 - 90f8380ba1ef9dfe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; PBKSSwiftUI.NewsDetail in closure #1 (Swift.Int, PBKSSwiftUI.SIFeedsListingItem) -&gt; Swift.Optional&lt;SwiftUI.NavigationLink&lt;PBKSSwiftUI.NewsSmallContentItem, PBKSSwiftUI.NewsDetail&gt;&gt; in closure #5 () -&gt; Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;(offset: Swift.Int, element: PBKSSwiftUI.SIFeedsListingItem)&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Optional&lt;SwiftUI.NavigationLink&lt;PBKSSwiftUI.NewsSmallContentItem, PBKSSwiftUI.NewsDetail&gt;&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.overlay&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(_: &#x3c4;_1_0, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt;, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "00646356-B323-40E6-AD15-9016BAFC1F31 - 90f8380ba1ef9dd9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; PBKSSwiftUI.NewsDetail in closure #1 (Swift.Int, PBKSSwiftUI.SIFeedsListingItem) -&gt; Swift.Optional&lt;SwiftUI.NavigationLink&lt;PBKSSwiftUI.NewsSmallContentItem, PBKSSwiftUI.NewsDetail&gt;&gt; in closure #5 () -&gt; Swift.Optional&lt;SwiftUI.ForEach&lt;Swift.Array&lt;(offset: Swift.Int, element: PBKSSwiftUI.SIFeedsListingItem)&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Optional&lt;SwiftUI.NavigationLink&lt;PBKSSwiftUI.NewsSmallContentItem, PBKSSwiftUI.NewsDetail&gt;&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.overlay&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(_: &#x3c4;_1_0, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0, SwiftUI.Spacer, SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0&gt;, SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "183"
+                  endingLineNumber = "183"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C81C27FA-6EC8-44B9-9CAB-F50686062F65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/News/View Model/NewsVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "fetchDetail(detailURL:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C81C27FA-6EC8-44B9-9CAB-F50686062F65 - 6e942416a27a9648"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for PBKSSwiftUI.NewsVM.fetchDetail(detailURL: Swift.String) async -&gt; ()"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/View%20Model/NewsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "C81C27FA-6EC8-44B9-9CAB-F50686062F65 - 3bcac1b4024f6970"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for PBKSSwiftUI.NewsVM.fetchDetail(detailURL: Swift.String) async -&gt; ()"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/View%20Model/NewsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "C81C27FA-6EC8-44B9-9CAB-F50686062F65 - fee24d1d1273a24a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for PBKSSwiftUI.NewsVM.fetchDetail(detailURL: Swift.String) async -&gt; ()"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/View%20Model/NewsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "C81C27FA-6EC8-44B9-9CAB-F50686062F65 - b6d742a7da70d855"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for PBKSSwiftUI.NewsVM.fetchDetail(detailURL: Swift.String) async -&gt; ()"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/View%20Model/NewsVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A1D919B-C7C6-4E3A-9FD3-78A78B18B10F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/News/View Model/NewsVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchDetail(detailURL:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFD612BA-CCA2-441C-9774-F4A6D3DB252C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/News/Views/NewsDetail.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "detailURL"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AFD612BA-CCA2-441C-9774-F4A6D3DB252C - a69c7faa4839d4ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PBKSSwiftUI.NewsDetail.detailURL.getter : Swift.String"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "AFD612BA-CCA2-441C-9774-F4A6D3DB252C - a69c7faa4839d48d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PBKSSwiftUI.NewsDetail.detailURL.getter : Swift.String"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32DC0267-F19E-4CCE-9779-769007555852"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/News/Views/NewsDetail.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "32DC0267-F19E-4CCE-9779-769007555852 - a14fd9f9d7a5efb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "201"
+                  endingLineNumber = "201"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "32DC0267-F19E-4CCE-9779-769007555852 - d83d9b7dbae4afa6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "201"
+                  endingLineNumber = "201"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "32DC0267-F19E-4CCE-9779-769007555852 - 10f9d6308a5717b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "201"
+                  endingLineNumber = "201"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "32DC0267-F19E-4CCE-9779-769007555852 - a14fd9f9d7a5ef91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "32DC0267-F19E-4CCE-9779-769007555852 - d83d9b7dbae4af87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "32DC0267-F19E-4CCE-9779-769007555852 - 10f9d6308a571795"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0 in PBKSSwiftUI.NewsDetail.body.getter : some"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "202"
+                  endingLineNumber = "202"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC054359-75B3-49D6-97D0-CBED9B2C8EC2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PBKSSwiftUI/News/Views/NewsDetail.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "htmlString"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AC054359-75B3-49D6-97D0-CBED9B2C8EC2 - ff1af3115674cdc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PBKSSwiftUI.NewsDetail.htmlString.getter : Swift.String"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "AC054359-75B3-49D6-97D0-CBED9B2C8EC2 - ff1af3115674cdf9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PBKSSwiftUI.NewsDetail.htmlString.getter : Swift.String"
+                  moduleName = "PBKSSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apurvajalgaonkar/Documents/SwiftUI/PBKSSwiftUI/PBKSSwiftUI/News/Views/NewsDetail.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
