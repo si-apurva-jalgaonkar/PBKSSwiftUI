@@ -16,6 +16,8 @@
 		AA19EC092C2C3C89003CBD95 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA19EC062C2C3C89003CBD95 /* Montserrat-Medium.ttf */; };
 		AA19EC0A2C2C3C89003CBD95 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA19EC072C2C3C89003CBD95 /* Montserrat-Regular.ttf */; };
 		AA19EC0C2C2C45EF003CBD95 /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19EC0B2C2C45EF003CBD95 /* WKWebView.swift */; };
+		AA236AE32C36D97D0080EF2E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA236AE22C36D97D0080EF2E /* CustomTabBar.swift */; };
+		AA236AE52C36D9A20080EF2E /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA236AE42C36D9A20080EF2E /* TabBarButton.swift */; };
 		AA4D8B3D2C22ACC9004C5319 /* PBKSSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D8B3C2C22ACC9004C5319 /* PBKSSwiftUIApp.swift */; };
 		AA4D8B3F2C22ACC9004C5319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D8B3E2C22ACC9004C5319 /* ContentView.swift */; };
 		AA4D8B412C22ACCA004C5319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA4D8B402C22ACCA004C5319 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		AA19EC062C2C3C89003CBD95 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		AA19EC072C2C3C89003CBD95 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		AA19EC0B2C2C45EF003CBD95 /* WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebView.swift; sourceTree = "<group>"; };
+		AA236AE22C36D97D0080EF2E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		AA236AE42C36D9A20080EF2E /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		AA4D8B392C22ACC9004C5319 /* PBKSSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBKSSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4D8B3C2C22ACC9004C5319 /* PBKSSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKSSwiftUIApp.swift; sourceTree = "<group>"; };
 		AA4D8B3E2C22ACC9004C5319 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,6 +132,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		AA236AE12C36D9610080EF2E /* Custom Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				AA236AE22C36D97D0080EF2E /* CustomTabBar.swift */,
+				AA236AE42C36D9A20080EF2E /* TabBarButton.swift */,
+			);
+			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
 		AA4D8B302C22ACC9004C5319 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +160,7 @@
 		AA4D8B3B2C22ACC9004C5319 /* PBKSSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AA236AE12C36D9610080EF2E /* Custom Tab Bar */,
 				AA19EC042C2C3C7B003CBD95 /* Fonts */,
 				AA19EC012C2C3306003CBD95 /* Info.plist */,
 				AA756E0A2C2AB15400C2D644 /* CommonUtilities */,
@@ -323,6 +337,7 @@
 				AA8EAA232C2EE74C00AD7AAC /* Login.swift in Sources */,
 				AA0DFE692C245ADB0071C77D /* VideosListing.swift in Sources */,
 				AA6CA9E42C32D60B00068934 /* LoginCompleteProfile.swift in Sources */,
+				AA236AE32C36D97D0080EF2E /* CustomTabBar.swift in Sources */,
 				AA756E022C2A992100C2D644 /* SIFeedsListing.swift in Sources */,
 				AA19EC0C2C2C45EF003CBD95 /* WKWebView.swift in Sources */,
 				AA756E0C2C2AB17000C2D644 /* CommonUtilities.swift in Sources */,
@@ -343,6 +358,7 @@
 				AA0DFE652C24474C0071C77D /* VideosSmallContentItem.swift in Sources */,
 				AA0DFE672C24569A0071C77D /* VideosLargeContentItem.swift in Sources */,
 				AA4D8B562C230AB7004C5319 /* NewsDetail.swift in Sources */,
+				AA236AE52C36D9A20080EF2E /* TabBarButton.swift in Sources */,
 				AA756E002C2957EA00C2D644 /* VideosData.swift in Sources */,
 				AA8EAA1D2C2D787C00AD7AAC /* NewsVM.swift in Sources */,
 			);
