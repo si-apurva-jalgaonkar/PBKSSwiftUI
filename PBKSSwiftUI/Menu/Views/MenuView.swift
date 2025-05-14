@@ -72,8 +72,6 @@ struct MenuItem: View {
 struct LoginProfile : View {
     var body: some View {
         HStack {
-            
-            
             Circle()
                 .foregroundStyle(CustomColor.getColor(named: .white_FFFFFF))
                 .frame(width: 50, height: 50)
@@ -86,10 +84,7 @@ struct LoginProfile : View {
             
             Spacer()
             
-            Button {
-                Login(mobileNumber: "94684956849845")
-                print("Profile Btn")
-            } label: {
+            NavigationLink(destination: Login(mobileNumber: "")) {
                 Circle()
                     .foregroundStyle(CustomColor.getColor(named: .white_FFFFFF))
                     .frame(width: 25, height: 25)
@@ -99,9 +94,6 @@ struct LoginProfile : View {
                             .frame(width: 10, height: 10)
                     }
             }
-
-            
-           
         }
         .padding()
         Rectangle()
@@ -109,7 +101,6 @@ struct LoginProfile : View {
             .padding(.horizontal, 20)
             .foregroundStyle(CustomColor.getColor(named: .white_FFFFFF))
     }
-    
 }
 
 struct notificationView : View {

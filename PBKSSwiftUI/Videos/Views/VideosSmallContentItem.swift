@@ -72,8 +72,6 @@ struct VideosSmallContentItem: View {
                     .foregroundStyle(CustomColor.getColor(named: .red_ED1C24))
                     .font(.custom(CustomFonts.MontserratBold.name, size: 12))
                 
-               
-                
                 Text(title)
                     .lineLimit(2)
                     .font(.custom(CustomFonts.MontserratBold.name, size: 14))
