@@ -7,15 +7,25 @@
 
 import Foundation
 
-enum APIServiceError: Error {
-    case invalidURL
-    case badServerResponse(String)
-    case decodingError(String)
+enum NetworkHeaderType: String {
+    case cleanAuthorization
+//    case profileAuth
+//    case loginAuth
+//    case notificationAuth
+//    case loyaltyAuth
+//    case fanLoyaltyAuth
 }
 
-//private let listingURL = "https://www.punjabkingsipl.in/apiv3/listing?entities=4,3&otherent=&exclent=&pgnum=1&inum=10&pgsize=50"
-
-
+enum ServiceError: String, Error {
+    case noInternet
+    case invalidUrl = "Invalid Url"
+    case dataFailure = "Invalid Data"
+    case invalidResponse = "Invalid Response"
+    case unknownIssue = "Something went wrong!! Please try after some time"
+    case userAccountExist = "User account already Exist."
+    case none
+    var description: String {self.rawValue}
+}
 
 import Foundation
 
@@ -31,62 +41,65 @@ class ServiceManager {
         session = URLSession(configuration: sessionConfig)
     }
     
-    func fetchListingData(listingURL: String) async throws -> SIFeedsListingModel {
-        let userAPIEndpoint = URL(string: listingURL)!
-        var request = URLRequest(url: userAPIEndpoint)
-        request.httpMethod = "GET"
-        
-        let (data, response) = try await session.data(for: request)
-        try validateResponse(response)
-        return try decodeResponse(data: data)
+    private func getHeaders(_ type: NetworkHeaderType) -> [String:String]? {
+        switch type {
+        case .cleanAuthorization:
+            return nil
+        }
     }
-    
-    func fetchDetailData(detailURL: String) async throws -> SIFeedsDetailModel {
-        let userAPIEndpoint = URL(string: detailURL)!
-        var request = URLRequest(url: userAPIEndpoint)
-        request.httpMethod = "GET"
-        
-        let (data, response) = try await session.data(for: request)
-        try validateResponse(response)
-        return try decodeDetailResponse(data: data)
-    }
-    
 
-    private func validateResponse(_ response: URLResponse) throws {
-        guard let httpResponse = response as? HTTPURLResponse else {
-            throw APIServiceError.badServerResponse("Invalid response")
+    func makeGetRequest<T: Codable>(url: String,
+                                    type: T.Type,
+                                    headerType: NetworkHeaderType = .cleanAuthorization,
+                                    completion: @escaping (Result<T, ServiceError>) -> Void) {
+        guard let url = URL(string: url) else {
+            completion(.failure(.invalidUrl))
+            return
         }
+        print("URL : \(url) ")
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "content-type")
+        request.allHTTPHeaderFields = getHeaders(headerType)
         
-        switch httpResponse.statusCode {
-        case 200...299:
-            break
-        case 400...499:
-            throw APIServiceError.badServerResponse("Client error: \(httpResponse.statusCode)")
-        case 500...599:
-            throw APIServiceError.badServerResponse("Server error: \(httpResponse.statusCode)")
-        default:
-            throw APIServiceError.badServerResponse("Unexpected response code: \(httpResponse.statusCode)")
-        }
-    }
-    
-    private func decodeResponse(data: Data) throws -> SIFeedsListingModel {
-        let decoder = JSONDecoder()
-        return try decoder.decode(SIFeedsListingModel.self, from: data)
-    }
-    
-//    private func decodeDetailResponse(data: Data) throws -> SIFeedsDetailModel {
-//        let decoder = JSONDecoder()
-//        return try decoder.decode(SIFeedsDetailModel.self, from: data)
-//    }
-    
-    private func decodeDetailResponse(data: Data) throws -> SIFeedsDetailModel {
+        let sessionConfig = URLSessionConfiguration.default
+        sessionConfig.waitsForConnectivity = true
+        sessionConfig.allowsConstrainedNetworkAccess = true
+        sessionConfig.allowsCellularAccess = true
+        
+        let session = URLSession(configuration: sessionConfig)
+      //  print("request payload", request.curlString)
+        let task = session.dataTask(with: request,
+                                    completionHandler: {data, response, error in
+            
+            guard error == nil else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(.dataFailure))
+                return
+            }
+            //      debugPrint(String(data: data, encoding: .utf8))
+            guard response != nil else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
             do {
                 let decoder = JSONDecoder()
-                let detailModel = try decoder.decode(SIFeedsDetailModel.self, from: data)
-                return detailModel
+                let returnedResponse = try decoder.decode(T.self, from: data)
+                completion(.success(returnedResponse))
             } catch {
-                throw URLError(.cannotDecodeContentData)
+                debugPrint("Get Service Error: \(error)")
+                completion(.failure(.invalidResponse))
+                return
             }
-        }
+            
+        })
+        task.resume()
+    }
+
 }
 

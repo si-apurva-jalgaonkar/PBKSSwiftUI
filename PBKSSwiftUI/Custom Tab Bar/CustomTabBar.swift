@@ -9,9 +9,11 @@ import SwiftUI
 
 enum Tabs: Int {
     case videosListing = 0
-    case videosDetail = 1
+//    case videosDetail = 1
     case newsListing = 2
-    case newsDetail = 3
+    //case newsDetail = 3
+    case menu = 3
+    case home = 1
 }
 
 struct CustomTabBar: View {
@@ -31,13 +33,22 @@ struct CustomTabBar: View {
                     isActive: selectedTabs == .videosListing)
             })
             
+//            Button(action: {
+//                selectedTabs = .videosDetail
+//            }, label: {
+//                TabBarButton(
+//                    buttonText: "Videos Details",
+//                    imageName: "video.fill",
+//                    isActive: selectedTabs == .videosDetail)
+//            })
+            
             Button(action: {
-                selectedTabs = .videosDetail
+                selectedTabs = .home
             }, label: {
                 TabBarButton(
-                    buttonText: "Videos Details",
+                    buttonText: "Home",
                     imageName: "video.fill",
-                    isActive: selectedTabs == .videosDetail)
+                    isActive: selectedTabs == .home)
             })
             
             Button(action: {
@@ -49,16 +60,25 @@ struct CustomTabBar: View {
                     isActive: selectedTabs == .newsListing)
             })
             
+//            Button(action: {
+//                selectedTabs = .newsDetail
+//            }, label: {
+//                TabBarButton(
+//                    buttonText: "News Details",
+//                    imageName: "newspaper.fill",
+//                    isActive: selectedTabs == .newsDetail)
+//            })
+            
             Button(action: {
-                selectedTabs = .newsDetail
+                selectedTabs = .menu
             }, label: {
                 TabBarButton(
-                    buttonText: "News Details",
+                    buttonText: "Menu",
                     imageName: "newspaper.fill",
-                    isActive: selectedTabs == .newsDetail)
+                    isActive: selectedTabs == .menu)
             })
         }
-        .frame(height: 82)
+        .frame(height: 80)
     }
 }
 

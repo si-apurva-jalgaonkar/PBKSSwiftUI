@@ -31,6 +31,9 @@ enum CustomColor: String {
     case white_FFFFFF
     case grey_light_BDBDBD
     case grey_616161
+    case red_FC2B22
+    case yellow_FFDEAD
+    case pink_F59494
 
     var name: String {self.rawValue}
     

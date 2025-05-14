@@ -11,33 +11,34 @@ import Foundation
 class VideosVM: ObservableObject {
     @Published var videos: SIFeedsListingModel?
     @Published var videosDetail: SIFeedsDetailModel?
-    @Published var isLoading = false
-    @Published var errorMessage: String?
     
     let serviceManager = ServiceManager()
     
     func fetchList(listingURL: String) async {
-        isLoading = true
-        errorMessage = nil
-        do {
-            let fetchedVideos = try await serviceManager.fetchListingData(listingURL: listingURL)
-            videos = fetchedVideos
-        } catch {
-            errorMessage = "Failed to fetch user data: \(error.localizedDescription)"
+        serviceManager.makeGetRequest(url: listingURL, type: SIFeedsListingModel.self) { [weak self] response in
+            guard let self = self else {return}
+            switch response {
+            case .success(let returnedResponse):
+                videos = returnedResponse
+                //                    onSuccess()
+            case .failure(let error): break
+                //                    onFailure(error)
+            }
         }
-        isLoading = false
     }
     
     func fetchDetail(detailURL: String) async {
-        isLoading = true
-        errorMessage = nil
-        do {
-            let fetchedVideosDetail = try await serviceManager.fetchDetailData(detailURL: detailURL)
-            videosDetail = fetchedVideosDetail
-        } catch {
-            errorMessage = "Failed to fetch user data: \(error.localizedDescription)"
+        serviceManager.makeGetRequest(url: detailURL, type: SIFeedsDetailModel.self) { [weak self] response in
+            guard let self = self else {return}
+            switch response {
+            case .success(let returnedResponse):
+                videosDetail = returnedResponse
+                print(returnedResponse)
+                //                    onSuccess()
+            case .failure(let error): break
+                //                    onFailure(error)
+            }
         }
-        isLoading = false
     }
 }
 

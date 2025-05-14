@@ -17,7 +17,9 @@ struct ContentView: View {
         case videosListing
         case videosDetail
         case newsListing
-        case newsDetail
+//        case newsDetail
+        case menu
+        case home
     }
     
     var body: some View {
@@ -27,43 +29,19 @@ struct ContentView: View {
             switch selectedTabs {
             case .videosListing:
                 VideosListing()
-            case .videosDetail:
-                VideosDetail(date: "", title: "", titleAlias: "", viewModel: VideosVM())
+//            case .videosDetail:
+//                VideosDetail(date: "", title: "", titleAlias: "", videoUrl: "", viewModel: VideosVM())
+            case .home:
+                HomeVC()
             case .newsListing:
                 NewsListing(viewModel: NewsVM())
-            case .newsDetail:
-                NewsDetail(date: "", title: "", titleAlias: "", viewModel: NewsVM())
+//            case .newsDetail:
+//                NewsDetail(date: "", title: "", titleAlias: "", viewModel: NewsVM())
+            case .menu:
+                MenuView()
             }
             CustomTabBar(selectedTabs: $selectedTabs)
-//            NewsListing()
-//            VideosListing()
-//            VideosDetail(date: "", title: "", titleAlias: "", viewModel: VideosVM())
-            
-//            TabView(selection: $selection) {
-//                VideosListing()
-//                    .tabItem {
-//                        Label("Videos Listing", systemImage: "star")
-//                    }
-//                    .tag(Tab.videosListing)
-//                
-//                VideosDetail(date: "", title: "", titleAlias: "", viewModel: VideosVM())
-//                    .tabItem {
-//                        Label("Videos Details", systemImage: "star")
-//                    }
-//                    .tag(Tab.videosDetail)
-//                
-//                NewsListing(viewModel: NewsVM())
-//                    .tabItem {
-//                        Label("News Listing", systemImage: "star")
-//                    }
-//                    .tag(Tab.newsListing)
-//                
-//                NewsDetail(date: "", title: "", titleAlias: "", viewModel: NewsVM())
-//                    .tabItem {
-//                        Label("News Details", systemImage: "star")
-//                    }
-//                    .tag(Tab.newsDetail)
-//            }
+
             
 //            Login(mobileNumber: "")
             

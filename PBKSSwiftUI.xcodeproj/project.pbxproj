@@ -15,7 +15,7 @@
 		AA19EC082C2C3C89003CBD95 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA19EC052C2C3C89003CBD95 /* Montserrat-Bold.ttf */; };
 		AA19EC092C2C3C89003CBD95 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA19EC062C2C3C89003CBD95 /* Montserrat-Medium.ttf */; };
 		AA19EC0A2C2C3C89003CBD95 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA19EC072C2C3C89003CBD95 /* Montserrat-Regular.ttf */; };
-		AA19EC0C2C2C45EF003CBD95 /* WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19EC0B2C2C45EF003CBD95 /* WKWebView.swift */; };
+		AA19EC0C2C2C45EF003CBD95 /* HtmlWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19EC0B2C2C45EF003CBD95 /* HtmlWebView.swift */; };
 		AA236AE32C36D97D0080EF2E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA236AE22C36D97D0080EF2E /* CustomTabBar.swift */; };
 		AA236AE52C36D9A20080EF2E /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA236AE42C36D9A20080EF2E /* TabBarButton.swift */; };
 		AA4D8B3D2C22ACC9004C5319 /* PBKSSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4D8B3C2C22ACC9004C5319 /* PBKSSwiftUIApp.swift */; };
@@ -40,6 +40,26 @@
 		AA827EFF2C25A85B0057B745 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA827EFE2C25A85B0057B745 /* VideoPlayerView.swift */; };
 		AA8EAA1D2C2D787C00AD7AAC /* NewsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8EAA1C2C2D787C00AD7AAC /* NewsVM.swift */; };
 		AA8EAA232C2EE74C00AD7AAC /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8EAA222C2EE74C00AD7AAC /* Login.swift */; };
+		AAE8A6422DCA29EB004C9D90 /* BrightcovePlayerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AAE8A6412DCA29EB004C9D90 /* BrightcovePlayerSDK */; };
+		AAE8A6462DCA3A45004C9D90 /* YouTubePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6452DCA3A45004C9D90 /* YouTubePlayerView.swift */; };
+		AAE8A6492DCB38AF004C9D90 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = AAE8A6482DCB38AF004C9D90 /* YouTubeiOSPlayerHelper */; };
+		AAE8A64E2DCB44C1004C9D90 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A64D2DCB44C1004C9D90 /* MenuView.swift */; };
+		AAE8A6502DCB75D8004C9D90 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A64F2DCB75D8004C9D90 /* WebView.swift */; };
+		AAE8A65F2DCC8FF2004C9D90 /* VerticalPoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A65E2DCC8FF2004C9D90 /* VerticalPoll.swift */; };
+		AAE8A6612DCC9E35004C9D90 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6602DCC9E35004C9D90 /* HomeVC.swift */; };
+		AAE8A6632DCC9F4D004C9D90 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6622DCC9F4D004C9D90 /* BannerView.swift */; };
+		AAE8A6652DCCA12A004C9D90 /* Shorts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6642DCCA12A004C9D90 /* Shorts.swift */; };
+		AAE8A6672DCCBD90004C9D90 /* ScoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6662DCCBD90004C9D90 /* ScoreCard.swift */; };
+		AAE8A66B2DCCE90A004C9D90 /* FanPoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A66A2DCCE90A004C9D90 /* FanPoll.swift */; };
+		AAE8A66D2DCCEB72004C9D90 /* HomeMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A66C2DCCEB72004C9D90 /* HomeMoreView.swift */; };
+		AAE8A6712DCE1170004C9D90 /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6702DCE1170004C9D90 /* PlayerData.swift */; };
+		AAE8A6732DD21AD4004C9D90 /* SaddaSquad.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6722DD21AD4004C9D90 /* SaddaSquad.swift */; };
+		AAE8A6752DD31DA4004C9D90 /* DealOfTheWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6742DD31DA4004C9D90 /* DealOfTheWeekView.swift */; };
+		AAE8A6772DD325BE004C9D90 /* ScoreCardLive.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6762DD325BE004C9D90 /* ScoreCardLive.swift */; };
+		AAE8A6792DD343D0004C9D90 /* ScoreCardUpcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6782DD343D0004C9D90 /* ScoreCardUpcoming.swift */; };
+		AAE8A6812DD36DF3004C9D90 /* HomeSmallContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6802DD36DF3004C9D90 /* HomeSmallContentView.swift */; };
+		AAE8A6832DD3773C004C9D90 /* HomeLargeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6822DD3773C004C9D90 /* HomeLargeContentView.swift */; };
+		AAE8A6852DD46B8C004C9D90 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE8A6842DD46B8C004C9D90 /* HomeVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +72,7 @@
 		AA19EC052C2C3C89003CBD95 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		AA19EC062C2C3C89003CBD95 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		AA19EC072C2C3C89003CBD95 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		AA19EC0B2C2C45EF003CBD95 /* WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebView.swift; sourceTree = "<group>"; };
+		AA19EC0B2C2C45EF003CBD95 /* HtmlWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlWebView.swift; sourceTree = "<group>"; };
 		AA236AE22C36D97D0080EF2E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		AA236AE42C36D9A20080EF2E /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		AA4D8B392C22ACC9004C5319 /* PBKSSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBKSSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +98,24 @@
 		AA827EFE2C25A85B0057B745 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		AA8EAA1C2C2D787C00AD7AAC /* NewsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVM.swift; sourceTree = "<group>"; };
 		AA8EAA222C2EE74C00AD7AAC /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		AAE8A6452DCA3A45004C9D90 /* YouTubePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerView.swift; sourceTree = "<group>"; };
+		AAE8A64D2DCB44C1004C9D90 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		AAE8A64F2DCB75D8004C9D90 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		AAE8A65E2DCC8FF2004C9D90 /* VerticalPoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPoll.swift; sourceTree = "<group>"; };
+		AAE8A6602DCC9E35004C9D90 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		AAE8A6622DCC9F4D004C9D90 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		AAE8A6642DCCA12A004C9D90 /* Shorts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shorts.swift; sourceTree = "<group>"; };
+		AAE8A6662DCCBD90004C9D90 /* ScoreCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCard.swift; sourceTree = "<group>"; };
+		AAE8A66A2DCCE90A004C9D90 /* FanPoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanPoll.swift; sourceTree = "<group>"; };
+		AAE8A66C2DCCEB72004C9D90 /* HomeMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMoreView.swift; sourceTree = "<group>"; };
+		AAE8A6702DCE1170004C9D90 /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
+		AAE8A6722DD21AD4004C9D90 /* SaddaSquad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaddaSquad.swift; sourceTree = "<group>"; };
+		AAE8A6742DD31DA4004C9D90 /* DealOfTheWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealOfTheWeekView.swift; sourceTree = "<group>"; };
+		AAE8A6762DD325BE004C9D90 /* ScoreCardLive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCardLive.swift; sourceTree = "<group>"; };
+		AAE8A6782DD343D0004C9D90 /* ScoreCardUpcoming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCardUpcoming.swift; sourceTree = "<group>"; };
+		AAE8A6802DD36DF3004C9D90 /* HomeSmallContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSmallContentView.swift; sourceTree = "<group>"; };
+		AAE8A6822DD3773C004C9D90 /* HomeLargeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLargeContentView.swift; sourceTree = "<group>"; };
+		AAE8A6842DD46B8C004C9D90 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE8A6422DCA29EB004C9D90 /* BrightcovePlayerSDK in Frameworks */,
+				AAE8A6492DCB38AF004C9D90 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +134,7 @@
 		AA0DFE612C2424620071C77D /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				AAE8A6592DCC8E8A004C9D90 /* ViewController */,
 				AA756E072C2AA71500C2D644 /* View Model */,
 				AA756DFE2C2957CC00C2D644 /* Model */,
 				AA0DFE632C2424770071C77D /* Views */,
@@ -104,6 +145,7 @@
 		AA0DFE622C24246D0071C77D /* News */ = {
 			isa = PBXGroup;
 			children = (
+				AAE8A65A2DCC8EC6004C9D90 /* ViewController */,
 				AA8EAA1B2C2D785E00AD7AAC /* View Model */,
 				AA4D8B4A2C22AD7E004C5319 /* Views */,
 			);
@@ -115,8 +157,6 @@
 			children = (
 				AA0DFE642C24474C0071C77D /* VideosSmallContentItem.swift */,
 				AA0DFE662C24569A0071C77D /* VideosLargeContentItem.swift */,
-				AA0DFE682C245ADB0071C77D /* VideosListing.swift */,
-				AA0DFE6A2C2464600071C77D /* VideosDetail.swift */,
 				AA827EFE2C25A85B0057B745 /* VideoPlayerView.swift */,
 			);
 			path = Views;
@@ -160,6 +200,7 @@
 		AA4D8B3B2C22ACC9004C5319 /* PBKSSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				AAE8A6572DCC8E67004C9D90 /* Home */,
 				AA236AE12C36D9610080EF2E /* Custom Tab Bar */,
 				AA19EC042C2C3C7B003CBD95 /* Fonts */,
 				AA19EC012C2C3306003CBD95 /* Info.plist */,
@@ -168,10 +209,12 @@
 				AA4D8B3E2C22ACC9004C5319 /* ContentView.swift */,
 				AA756E032C2AA1E100C2D644 /* ServiceManager.swift */,
 				AA19EC022C2C39AD003CBD95 /* CustomFonts.swift */,
-				AA19EC0B2C2C45EF003CBD95 /* WKWebView.swift */,
+				AA19EC0B2C2C45EF003CBD95 /* HtmlWebView.swift */,
+				AAE8A6452DCA3A45004C9D90 /* YouTubePlayerView.swift */,
 				AA8EAA1E2C2EE64C00AD7AAC /* Login */,
 				AA0DFE622C24246D0071C77D /* News */,
 				AA0DFE612C2424620071C77D /* Videos */,
+				AAE8A64B2DCB448C004C9D90 /* Menu */,
 				AA4D8B402C22ACCA004C5319 /* Assets.xcassets */,
 				AA4D8B422C22ACCA004C5319 /* Preview Content */,
 			);
@@ -191,8 +234,6 @@
 			children = (
 				AA4D8B4F2C22AEFD004C5319 /* NewsSmallContentItem.swift */,
 				AA4D8B512C22C250004C5319 /* NewsLargeContentItem.swift */,
-				AA4D8B532C22E52C004C5319 /* NewsListing.swift */,
-				AA4D8B552C230AB7004C5319 /* NewsDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +269,7 @@
 				AA756E012C2A992100C2D644 /* SIFeedsListing.swift */,
 				AA756E052C2AA41800C2D644 /* SIFeedsDetailsListing.swift */,
 				AA756E0B2C2AB17000C2D644 /* CommonUtilities.swift */,
+				AAE8A64F2DCB75D8004C9D90 /* WebView.swift */,
 			);
 			path = CommonUtilities;
 			sourceTree = "<group>";
@@ -258,6 +300,94 @@
 				AA6CA9E32C32D60B00068934 /* LoginCompleteProfile.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AAE8A64B2DCB448C004C9D90 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A64C2DCB44A5004C9D90 /* Views */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		AAE8A64C2DCB44A5004C9D90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A64D2DCB44C1004C9D90 /* MenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAE8A6572DCC8E67004C9D90 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A65D2DCC8F1F004C9D90 /* ViewController */,
+				AAE8A65C2DCC8F15004C9D90 /* View Model */,
+				AAE8A65B2DCC8F0C004C9D90 /* Views */,
+				AAE8A6582DCC8E75004C9D90 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AAE8A6582DCC8E75004C9D90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A6702DCE1170004C9D90 /* PlayerData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AAE8A6592DCC8E8A004C9D90 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA0DFE682C245ADB0071C77D /* VideosListing.swift */,
+				AA0DFE6A2C2464600071C77D /* VideosDetail.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AAE8A65A2DCC8EC6004C9D90 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA4D8B532C22E52C004C5319 /* NewsListing.swift */,
+				AA4D8B552C230AB7004C5319 /* NewsDetail.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AAE8A65B2DCC8F0C004C9D90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A65E2DCC8FF2004C9D90 /* VerticalPoll.swift */,
+				AAE8A6622DCC9F4D004C9D90 /* BannerView.swift */,
+				AAE8A6642DCCA12A004C9D90 /* Shorts.swift */,
+				AAE8A6662DCCBD90004C9D90 /* ScoreCard.swift */,
+				AAE8A66A2DCCE90A004C9D90 /* FanPoll.swift */,
+				AAE8A66C2DCCEB72004C9D90 /* HomeMoreView.swift */,
+				AAE8A6722DD21AD4004C9D90 /* SaddaSquad.swift */,
+				AAE8A6742DD31DA4004C9D90 /* DealOfTheWeekView.swift */,
+				AAE8A6762DD325BE004C9D90 /* ScoreCardLive.swift */,
+				AAE8A6782DD343D0004C9D90 /* ScoreCardUpcoming.swift */,
+				AAE8A6802DD36DF3004C9D90 /* HomeSmallContentView.swift */,
+				AAE8A6822DD3773C004C9D90 /* HomeLargeContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAE8A65C2DCC8F15004C9D90 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A6842DD46B8C004C9D90 /* HomeVM.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		AAE8A65D2DCC8F1F004C9D90 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AAE8A6602DCC9E35004C9D90 /* HomeVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +434,10 @@
 				Base,
 			);
 			mainGroup = AA4D8B302C22ACC9004C5319;
+			packageReferences = (
+				AAE8A6402DCA29EB004C9D90 /* XCRemoteSwiftPackageReference "brightcove-player-sdk-ios" */,
+				AAE8A6472DCB38AF004C9D90 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = AA4D8B3A2C22ACC9004C5319 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,32 +468,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA6CA9E22C32C2F400068934 /* HeaderImage.swift in Sources */,
+				AAE8A6812DD36DF3004C9D90 /* HomeSmallContentView.swift in Sources */,
 				AA8EAA232C2EE74C00AD7AAC /* Login.swift in Sources */,
 				AA0DFE692C245ADB0071C77D /* VideosListing.swift in Sources */,
+				AAE8A6502DCB75D8004C9D90 /* WebView.swift in Sources */,
 				AA6CA9E42C32D60B00068934 /* LoginCompleteProfile.swift in Sources */,
+				AAE8A66B2DCCE90A004C9D90 /* FanPoll.swift in Sources */,
+				AAE8A6732DD21AD4004C9D90 /* SaddaSquad.swift in Sources */,
 				AA236AE32C36D97D0080EF2E /* CustomTabBar.swift in Sources */,
 				AA756E022C2A992100C2D644 /* SIFeedsListing.swift in Sources */,
-				AA19EC0C2C2C45EF003CBD95 /* WKWebView.swift in Sources */,
+				AA19EC0C2C2C45EF003CBD95 /* HtmlWebView.swift in Sources */,
 				AA756E0C2C2AB17000C2D644 /* CommonUtilities.swift in Sources */,
+				AAE8A6612DCC9E35004C9D90 /* HomeVC.swift in Sources */,
 				AA19EC032C2C39AD003CBD95 /* CustomFonts.swift in Sources */,
 				AA6CA9E82C32DE6500068934 /* Gender.swift in Sources */,
 				AA4D8B502C22AEFD004C5319 /* NewsSmallContentItem.swift in Sources */,
 				AA756E062C2AA41800C2D644 /* SIFeedsDetailsListing.swift in Sources */,
+				AAE8A6852DD46B8C004C9D90 /* HomeVM.swift in Sources */,
 				AA4D8B3F2C22ACC9004C5319 /* ContentView.swift in Sources */,
 				AA827EFF2C25A85B0057B745 /* VideoPlayerView.swift in Sources */,
 				AA756E092C2AA75000C2D644 /* VideosVM.swift in Sources */,
 				AA6CA9DE2C32993000068934 /* CountryCode.swift in Sources */,
 				AA756E042C2AA1E100C2D644 /* ServiceManager.swift in Sources */,
 				AA4D8B542C22E52C004C5319 /* NewsListing.swift in Sources */,
+				AAE8A6652DCCA12A004C9D90 /* Shorts.swift in Sources */,
 				AA0DFE6B2C2464600071C77D /* VideosDetail.swift in Sources */,
 				AA6CA9E02C32A02D00068934 /* LoginOTP.swift in Sources */,
 				AA4D8B3D2C22ACC9004C5319 /* PBKSSwiftUIApp.swift in Sources */,
+				AAE8A6672DCCBD90004C9D90 /* ScoreCard.swift in Sources */,
+				AAE8A6712DCE1170004C9D90 /* PlayerData.swift in Sources */,
+				AAE8A6792DD343D0004C9D90 /* ScoreCardUpcoming.swift in Sources */,
 				AA4D8B522C22C250004C5319 /* NewsLargeContentItem.swift in Sources */,
 				AA0DFE652C24474C0071C77D /* VideosSmallContentItem.swift in Sources */,
 				AA0DFE672C24569A0071C77D /* VideosLargeContentItem.swift in Sources */,
 				AA4D8B562C230AB7004C5319 /* NewsDetail.swift in Sources */,
+				AAE8A6752DD31DA4004C9D90 /* DealOfTheWeekView.swift in Sources */,
+				AAE8A64E2DCB44C1004C9D90 /* MenuView.swift in Sources */,
+				AAE8A6462DCA3A45004C9D90 /* YouTubePlayerView.swift in Sources */,
+				AAE8A66D2DCCEB72004C9D90 /* HomeMoreView.swift in Sources */,
 				AA236AE52C36D9A20080EF2E /* TabBarButton.swift in Sources */,
 				AA756E002C2957EA00C2D644 /* VideosData.swift in Sources */,
+				AAE8A6772DD325BE004C9D90 /* ScoreCardLive.swift in Sources */,
+				AAE8A65F2DCC8FF2004C9D90 /* VerticalPoll.swift in Sources */,
+				AAE8A6632DCC9F4D004C9D90 /* BannerView.swift in Sources */,
+				AAE8A6832DD3773C004C9D90 /* HomeLargeContentView.swift in Sources */,
 				AA8EAA1D2C2D787C00AD7AAC /* NewsVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,6 +718,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAE8A6402DCA29EB004C9D90 /* XCRemoteSwiftPackageReference "brightcove-player-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brightcove/brightcove-player-sdk-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		AAE8A6472DCB38AF004C9D90 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAE8A6412DCA29EB004C9D90 /* BrightcovePlayerSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE8A6402DCA29EB004C9D90 /* XCRemoteSwiftPackageReference "brightcove-player-sdk-ios" */;
+			productName = BrightcovePlayerSDK;
+		};
+		AAE8A6482DCB38AF004C9D90 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE8A6472DCB38AF004C9D90 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA4D8B312C22ACC9004C5319 /* Project object */;
 }

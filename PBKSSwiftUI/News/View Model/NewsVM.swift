@@ -11,50 +11,35 @@ import Foundation
 class NewsVM: ObservableObject {
     @Published var news: SIFeedsListingModel?
     @Published var newsDetail: SIFeedsDetailModel?
-    @Published var isLoading = false
-    @Published var errorMessage: String?
     
     let serviceManager = ServiceManager()
-    
+
     func fetchList(listingURL: String) async {
-        isLoading = true
-        errorMessage = nil
-        do {
-            let fetchedNews = try await serviceManager.fetchListingData(listingURL: listingURL)
-            news = fetchedNews
-        } catch {
-            errorMessage = "Failed to fetch user data: \(error.localizedDescription)"
+        serviceManager.makeGetRequest(url: listingURL, type: SIFeedsListingModel.self) { [weak self] response in
+            guard let self = self else {return}
+            switch response {
+            case .success(let returnedResponse):
+                news = returnedResponse
+                //                    onSuccess()
+            case .failure(let error): break
+                //                    onFailure(error)
+            }
         }
-        isLoading = false
     }
     
     func fetchDetail(detailURL: String) async {
-        isLoading = true
-        errorMessage = nil
-        do {
-            let fetchedNewsDetail = try await serviceManager.fetchDetailData(detailURL: detailURL)
-            newsDetail = fetchedNewsDetail
-        } catch {
-            errorMessage = "Failed to fetch user data: \(error.localizedDescription)"
+        serviceManager.makeGetRequest(url: detailURL, type: SIFeedsDetailModel.self) { [weak self] response in
+            guard let self = self else {return}
+            switch response {
+            case .success(let returnedResponse):
+                newsDetail = returnedResponse
+                print(returnedResponse)
+                //                    onSuccess()
+            case .failure(let error): break
+                //                    onFailure(error)
+            }
         }
-        isLoading = false
     }
-   
-//    func fetchDetail(detailURL: String) async {
-//            isLoading = true
-//            errorMessage = nil
-//            do {
-//                let fetchedNewsDetail = try await serviceManager.fetchDetailData(detailURL: detailURL)
-//                print("Fetched News Detail: \(fetchedNewsDetail)")
-//                newsDetail = fetchedNewsDetail
-//            } catch {
-//                errorMessage = "Failed to fetch news detail: \(error.localizedDescription)"
-//                print("Error fetching news detail: \(error.localizedDescription)")
-//            }
-//            isLoading = false
-//        }
-    
-    
 }
 
 
