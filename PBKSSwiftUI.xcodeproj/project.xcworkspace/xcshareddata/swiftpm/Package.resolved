@@ -1,0 +1,24 @@
+{
+  "originHash" : "1edb8f98af844b1991c17d0a14ed6a75a0114b16e51742cd363b5877c09b84ca",
+  "pins" : [
+    {
+      "identity" : "brightcove-player-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/brightcove/brightcove-player-sdk-ios.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f9bd1aba27e78468ec8dfa7ff7b278a0e7dd2aa5"
+      }
+    },
+    {
+      "identity" : "youtube-ios-player-helper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/youtube/youtube-ios-player-helper",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f57129cd4380ec0a74dd3a59da3270a1d653d59b"
+      }
+    }
+  ],
+  "version" : 3
+}
