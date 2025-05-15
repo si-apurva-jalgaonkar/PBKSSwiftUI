@@ -133,38 +133,74 @@ struct DropdownField: View {
     var label: String
     @Binding var selection: String
     let options: [String]
+
+    @State private var isExpanded = false
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(label)
+        VStack(alignment: .leading, spacing: 6) {
+            Text(label + "*")
                 .font(.custom(CustomFonts.MontserratRegular.rawValue, size: 12))
                 .foregroundColor(CustomColor.getColor(named: .grey_616161))
-                .padding(.horizontal, 15)
-                .padding(.top, 8)
-            Menu {
-                ForEach(options, id: \ .self) { option in
-                    Button(option) { selection = option }
+                .padding(.horizontal, 10)
+
+            Button(action: {
+                withAnimation {
+                    isExpanded.toggle()
                 }
-            } label: {
+            }) {
                 HStack {
-                    Text(selection.isEmpty ? label : selection)
+                    Text(selection.isEmpty ? "Select \(label)" : selection)
                         .font(.custom(CustomFonts.MontserratBold.rawValue, size: 16))
                         .foregroundColor(CustomColor.getColor(named: .black_212121))
                     Spacer()
-                    Image(systemName: "chevron.down")
+                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
                         .foregroundColor(.gray)
                 }
-                .padding(.vertical, 8)
-                .padding(.horizontal, 15)
-                .background(Color(.systemGray6))
-                .cornerRadius(8)
+                .padding()
+                
+                .cornerRadius(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray.opacity(0.4), lineWidth: 1)
+                )
+            }
+
+            if isExpanded {
+                VStack(spacing: 0) {
+                    ForEach(options, id: \.self) { option in
+                        Button(action: {
+                            selection = option
+                            withAnimation {
+                                isExpanded = false
+                            }
+                        }) {
+                            Text(option)
+                                .font(.custom(CustomFonts.MontserratRegular.rawValue, size: 16))
+                                .foregroundColor(.black)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding()
+                        }
+                        .background(Color.white)
+                        .overlay(
+                            Rectangle()
+                                .fill(Color.gray.opacity(0.2))
+                                .frame(height: 1)
+                                .offset(y: 0),
+                            alignment: .bottom
+                        )
+                    }
+                }
+                .background(Color.white)
+                .cornerRadius(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.gray.opacity(0.4), lineWidth: 1)
+                )
+                .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: 2)
             }
         }
-        .background(Color(.systemGray6))
-        .overlay(
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(Color.gray.opacity(0.5), lineWidth: 1)
-        )
-        .cornerRadius(10)
+       // .padding(.horizontal, 10)
+        .animation(.easeInOut(duration: 0.2), value: isExpanded)
     }
 }
 
