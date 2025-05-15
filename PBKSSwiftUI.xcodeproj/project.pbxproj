@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		81E985E82DD473E0003D5CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E985E72DD473E0003D5CCC /* Assets.xcassets */; };
 		81E985EB2DD4746A003D5CCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E985E92DD4746A003D5CCC /* Preview Assets.xcassets */; };
+		81E985F52DD4A546003D5CCC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E985F42DD4A546003D5CCC /* ProfileView.swift */; };
+		81E985F72DD4C651003D5CCC /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E985F62DD4C651003D5CCC /* EditProfileView.swift */; };
 		AA0DFE652C24474C0071C77D /* VideosSmallContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DFE642C24474C0071C77D /* VideosSmallContentItem.swift */; };
 		AA0DFE672C24569A0071C77D /* VideosLargeContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DFE662C24569A0071C77D /* VideosLargeContentItem.swift */; };
 		AA0DFE692C245ADB0071C77D /* VideosListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0DFE682C245ADB0071C77D /* VideosListing.swift */; };
@@ -65,6 +67,8 @@
 /* Begin PBXFileReference section */
 		81E985E72DD473E0003D5CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E985E92DD4746A003D5CCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81E985F42DD4A546003D5CCC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		81E985F62DD4C651003D5CCC /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		AA0DFE642C24474C0071C77D /* VideosSmallContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosSmallContentItem.swift; sourceTree = "<group>"; };
 		AA0DFE662C24569A0071C77D /* VideosLargeContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosLargeContentItem.swift; sourceTree = "<group>"; };
 		AA0DFE682C245ADB0071C77D /* VideosListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosListing.swift; sourceTree = "<group>"; };
@@ -139,6 +143,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		81E985F32DD4A52C003D5CCC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				81E985F42DD4A546003D5CCC /* ProfileView.swift */,
+				81E985F62DD4C651003D5CCC /* EditProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		AA0DFE612C2424620071C77D /* Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +221,7 @@
 		AA4D8B3B2C22ACC9004C5319 /* PBKSSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				81E985F32DD4A52C003D5CCC /* Profile */,
 				81E985EA2DD4746A003D5CCC /* Preview Content */,
 				81E985E72DD473E0003D5CCC /* Assets.xcassets */,
 				AAE8A6572DCC8E67004C9D90 /* Home */,
@@ -471,6 +485,7 @@
 				AAE8A6812DD36DF3004C9D90 /* HomeSmallContentView.swift in Sources */,
 				AA8EAA232C2EE74C00AD7AAC /* Login.swift in Sources */,
 				AA0DFE692C245ADB0071C77D /* VideosListing.swift in Sources */,
+				81E985F52DD4A546003D5CCC /* ProfileView.swift in Sources */,
 				AAE8A6502DCB75D8004C9D90 /* WebView.swift in Sources */,
 				AA6CA9E42C32D60B00068934 /* LoginCompleteProfile.swift in Sources */,
 				AAE8A66B2DCCE90A004C9D90 /* FanPoll.swift in Sources */,
@@ -484,6 +499,7 @@
 				AA6CA9E82C32DE6500068934 /* Gender.swift in Sources */,
 				AA4D8B502C22AEFD004C5319 /* NewsSmallContentItem.swift in Sources */,
 				AA756E062C2AA41800C2D644 /* SIFeedsDetailsListing.swift in Sources */,
+				81E985F72DD4C651003D5CCC /* EditProfileView.swift in Sources */,
 				AAE8A6852DD46B8C004C9D90 /* HomeVM.swift in Sources */,
 				AA4D8B3F2C22ACC9004C5319 /* ContentView.swift in Sources */,
 				AA827EFF2C25A85B0057B745 /* VideoPlayerView.swift in Sources */,

@@ -121,7 +121,6 @@ struct LoginOTP: View {
                         } label: {
                             Button("Verify & Proceed") {
                                 isActive = true
-                                
                             }
                             .font(.custom(CustomFonts.MontserratBold.name, size: 14))
                             .foregroundStyle(CustomColor.getColor(named: .white_FFFFFF))

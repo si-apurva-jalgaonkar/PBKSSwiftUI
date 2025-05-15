@@ -54,8 +54,7 @@ struct HomeVC: View {
                                         .font(.custom(CustomFonts.MontserratBold.rawValue, size: 12))
                                 }
                             }
-                        
-                    }
+                   }
                 }
                 
                 

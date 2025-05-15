@@ -14,14 +14,12 @@ struct LoginCompleteProfile: View {
     @State var isChecked: [Bool] = [false, false]
     @State private var selectedGender: Gender = genderNames.first!
     @State private var showGenderPicker = false
+    @State private var navigateToProfile = false
     
     var body: some View {
         VStack{
             HeaderImage()
                 .padding(.bottom)
-            
-            
-            
             ScrollView{
                 
                 HStack{
@@ -110,15 +108,23 @@ struct LoginCompleteProfile: View {
                 }
                 .padding(.top, 5)
                 
-                Button("Verify & Proceed") {
-                    print("verify & proceed")
+                Button(action: {
+                    navigateToProfile = true
+                }) {
+                    Text("Verify & Proceed")
+                        .font(.custom(CustomFonts.MontserratBold.name, size: 14))
+                        .foregroundStyle(CustomColor.getColor(named: .white_FFFFFF))
+                        .frame(width: 370, height: 44)
+                        .background(CustomColor.getColor(named: .red_ED1C24))
+                        .cornerRadius(5)
+                        .padding(.top, 5)
                 }
-                .font(.custom(CustomFonts.MontserratBold.name, size: 14))
-                .foregroundStyle(CustomColor.getColor(named: .white_FFFFFF))
-                .frame(width: 370, height: 44)
-                .background(CustomColor.getColor(named: .red_ED1C24))
-                .cornerRadius(5)
-                .padding(.top, 5)
+                .background(
+                    NavigationLink(destination: ProfileView(), isActive: $navigateToProfile) {
+                        EmptyView()
+                    }
+                    .hidden()
+                )
             }
             .padding()
             .scrollIndicators(.hidden)
